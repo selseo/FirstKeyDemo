@@ -1,15 +1,22 @@
 package com.example.nan.firstkeydemo;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static java.lang.Math.abs;
 
@@ -63,23 +70,25 @@ class Stroke{
 public class MainActivity extends Activity {
     //private String text = "";
     private TextView showText;
-    int before=0;
-    int after=0;
+    int before = 0;
+    int after = 0;
     //int i=-1;
     Stroke data;
+    HashMap<Integer, String> mapAlp = new HashMap<Integer, String>();
+
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     //private GoogleApiClient client;
     //private Stroke data[]=new Stroke[5];
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         showText = (TextView) findViewById(R.id.textView);
-
+        mapAlp.put(0,"");
 
         //Calendar c = Calendar.getInstance();
         //int seconds = c.get(Calendar.MILLISECOND);
@@ -88,8 +97,8 @@ public class MainActivity extends Activity {
         vowel0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String d="เอ";
-                boolean s=chectDelay();
+                String d = "เอ";
+                boolean s = chectDelay();
                 /*if(s) addOldVowel(i,d);
                 else {
                     i++;
@@ -99,9 +108,9 @@ public class MainActivity extends Activity {
                 }
                 String t=showData();
                 //String t=""+i;*/
-                if(s) addOldVowel(d);
+                if (s) addOldVowel(d);
                 else addNewVowel(d);
-                String t=""+data.getAlp()+" "+data.getVowel()+" "+data.getFin()+" "+data.getTone();
+                String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
                 showText.setText(t);
             }
         });
@@ -109,8 +118,8 @@ public class MainActivity extends Activity {
         vowel1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String d="แอ";
-                boolean s=chectDelay();
+                String d = "แอ";
+                boolean s = chectDelay();
                 /*if(s) addOldVowel(i,d);
                 else {
                     i++;
@@ -119,9 +128,9 @@ public class MainActivity extends Activity {
                     //i++;
                 }
                 String t=showData();*/
-                if(s) addOldVowel(d);
+                if (s) addOldVowel(d);
                 else addNewVowel(d);
-                String t=""+data.getAlp()+" "+data.getVowel()+" "+data.getFin()+" "+data.getTone();
+                String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
                 showText.setText(t);
             }
         });
@@ -129,8 +138,8 @@ public class MainActivity extends Activity {
         shortTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String d="แอ";
-                boolean s=chectDelay();
+                String d = "แอ";
+                boolean s = chectDelay();
                 /*if(s) addOldVowel(i,d);
                 else {
                     i++;
@@ -139,9 +148,9 @@ public class MainActivity extends Activity {
                     //i++;
                 }
                 String t=showData();*/
-                if(s) addOldVowel(d);
+                if (s) addOldVowel(d);
                 else addNewVowel(d);
-                String t=""+data.getAlp()+" "+data.getVowel()+" "+data.getFin()+" "+data.getTone();
+                String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
                 showText.setText(t);
             }
         });
@@ -149,8 +158,8 @@ public class MainActivity extends Activity {
         alp0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String d="จ";
-                boolean s=chectDelay();
+                String d = "จ";
+                boolean s = chectDelay();
                 /*if(s) addOldAlp(i,d);
                 else {
                     i++;
@@ -159,9 +168,9 @@ public class MainActivity extends Activity {
                     //i++;
                 }
                 String t=showData();*/
-                if(s) addOldAlp(d);
+                if (s) addOldAlp(d);
                 else addNewAlp(d);
-                String t=""+data.getAlp()+" "+data.getVowel()+" "+data.getFin()+" "+data.getTone();
+                String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
                 showText.setText(t);
             }
         });
@@ -169,8 +178,8 @@ public class MainActivity extends Activity {
         alp1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String d="ช";
-                boolean s=chectDelay();
+                String d = "ช";
+                boolean s = chectDelay();
                 /*if(s) addOldAlp(i,d);
                 else {
                     i++;
@@ -179,9 +188,9 @@ public class MainActivity extends Activity {
                     //i++;
                 }
                 String t=showData();*/
-                if(s) addOldAlp(d);
+                if (s) addOldAlp(d);
                 else addNewAlp(d);
-                String t=""+data.getAlp()+" "+data.getVowel()+" "+data.getFin()+" "+data.getTone();
+                String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
                 showText.setText(t);
             }
         });
@@ -199,9 +208,9 @@ public class MainActivity extends Activity {
                     //i++;
                 }
                 String t = showData();*/
-                if(s) addOldTone(d);
+                if (s) addOldTone(d);
                 else addNewTone(d);
-                String t=""+data.getAlp()+" "+data.getVowel()+" "+data.getFin()+" "+data.getTone();
+                String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
                 showText.setText(t);
             }
         });
@@ -219,9 +228,9 @@ public class MainActivity extends Activity {
                     //i++;
                 }
                 String t = showData();*/
-                if(s) addOldTone(d);
+                if (s) addOldTone(d);
                 else addNewTone(d);
-                String t=""+data.getAlp()+" "+data.getVowel()+" "+data.getFin()+" "+data.getTone();
+                String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
                 showText.setText(t);
             }
         });
@@ -239,9 +248,9 @@ public class MainActivity extends Activity {
                     //i++;
                 }
                 String t = showData();*/
-                if(s) addOldFinal(d);
+                if (s) addOldFinal(d);
                 else addNewFinal(d);
-                String t=""+data.getAlp()+" "+data.getVowel()+" "+data.getFin()+" "+data.getTone();
+                String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
                 showText.setText(t);
             }
         });
@@ -259,23 +268,25 @@ public class MainActivity extends Activity {
                     //i++;
                 }
                 String t = showData();*/
-                if(s) addOldFinal(d);
+                if (s) addOldFinal(d);
                 else addNewFinal(d);
-                String t=""+data.getAlp()+" "+data.getVowel()+" "+data.getFin()+" "+data.getTone();
+                String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
                 showText.setText(t);
             }
         });
 
 
     }
-    protected boolean chectDelay(){
+
+    protected boolean chectDelay() {
         Calendar c = Calendar.getInstance();
-        before=after;
-        after=c.get(Calendar.MILLISECOND)+c.get(Calendar.SECOND)*1000;
-        int a=abs(after-before);
-        if (a>300) return false;
+        before = after;
+        after = c.get(Calendar.MILLISECOND) + c.get(Calendar.SECOND) * 1000;
+        int a = abs(after - before);
+        if (a > 300) return false;
         else return true;
     }
+
     /*protected void addOldVowel(int j,String dd){
         data[j].setVowel(dd);
     }
@@ -316,35 +327,41 @@ public class MainActivity extends Activity {
         }
         return r;
     }*/
-    protected  void addOldVowel(String dd){
+    protected void addOldVowel(String dd) {
         data.setVowel(dd);
     }
-    protected  void addNewVowel(String dd){
-        data=new Stroke();
+
+    protected void addNewVowel(String dd) {
+        data = new Stroke();
         data.setVowel(dd);
     }
-    protected  void addOldAlp(String dd){
+
+    protected void addOldAlp(String dd) {
         data.setAlp(dd);
     }
-    protected  void addNewAlp(String dd){
-        data=new Stroke();
+
+    protected void addNewAlp(String dd) {
+        data = new Stroke();
         data.setAlp(dd);
     }
-    protected  void addOldFinal(String dd){
+
+    protected void addOldFinal(String dd) {
         data.setFin(dd);
     }
-    protected  void addNewFinal(String dd){
-        data=new Stroke();
+
+    protected void addNewFinal(String dd) {
+        data = new Stroke();
         data.setFin(dd);
     }
-    protected  void addOldTone(String dd){
-        data.setTone(dd);
-    }
-    protected  void addNewTone(String dd){
-        data=new Stroke();
+
+    protected void addOldTone(String dd) {
         data.setTone(dd);
     }
 
+    protected void addNewTone(String dd) {
+        data = new Stroke();
+        data.setTone(dd);
+    }
 
 
 }
