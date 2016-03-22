@@ -24,8 +24,10 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import static java.lang.Math.abs;
 
@@ -152,7 +154,7 @@ public class MainActivity extends Activity {
             FileInputStream fis = new FileInputStream(file);
             InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
             BufferedReader br = new BufferedReader(isr);
-            for (int i = 0; i < 50000; i++) {
+            for (int i = 0; i < 70000; i++) {
                 String line = br.readLine();
                 line = line.trim();
                 //Log.v("OUTPUT_H",line);
@@ -228,6 +230,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -251,6 +254,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -272,6 +276,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -293,6 +298,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -314,6 +320,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -335,6 +342,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -356,6 +364,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -377,6 +386,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -398,6 +408,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -419,6 +430,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -440,6 +452,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -461,6 +474,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -482,6 +496,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -501,6 +516,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -523,6 +539,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -543,6 +560,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -563,6 +581,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -583,6 +602,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -603,6 +623,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -623,6 +644,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -643,6 +665,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -663,6 +686,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -684,6 +708,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -704,6 +729,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -724,6 +750,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -744,6 +771,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -764,6 +792,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -784,6 +813,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -804,6 +834,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -824,6 +855,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -844,6 +876,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -864,6 +897,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -884,6 +918,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -904,6 +939,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -926,6 +962,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -946,6 +983,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -966,6 +1004,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -986,6 +1025,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -1008,6 +1048,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -1028,6 +1069,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -1048,6 +1090,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -1068,6 +1111,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -1088,6 +1132,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -1108,6 +1153,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -1128,6 +1174,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -1148,6 +1195,7 @@ public class MainActivity extends Activity {
                 else {
                     try {
                         t=realWord(data);
+                        if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -1159,6 +1207,502 @@ public class MainActivity extends Activity {
         });
 
 
+    }
+
+    protected String kamArn(String a,String v,String f,String t){
+        String ans="";
+        // TODO code application logic here
+
+        Set<String> fkp = new HashSet<String>() {};
+        fkp.add("กง");
+        fkp.add("กน");
+        fkp.add("กม");
+        fkp.add("เกย");
+        fkp.add("เกอว");
+
+        Set<String> fkt = new HashSet<String>() {};
+        fkt.add("กก");
+        fkt.add("กบ");
+        fkt.add("กด");
+
+        Set<String> vl = new HashSet<String>() {};
+        vl.add("อา");
+        vl.add("อี");
+        vl.add("อือ");
+        vl.add("เอ");
+        vl.add("โอ");
+        vl.add("แอ");
+        vl.add("ออ");
+        vl.add("เออ");
+        vl.add("เอีย");
+        vl.add("เอือ");
+        vl.add("อัว");
+        vl.add("อู");
+
+        Set<String> vs = new HashSet<String>() {};
+        vs.add("อะ");
+        vs.add("อิ");
+        vs.add("อึ");
+        vs.add("อุ");
+        vs.add("เอะ");
+        vs.add("แอะ");
+        vs.add("โอะ");
+        vs.add("เอาะ");
+        vs.add("เออะ");
+        vs.add("เอียะ");
+        vs.add("เอือะ");
+        vs.add("อัวะ");
+
+        Set<String> ma=new HashSet<String>(){};
+        ma.add("ก");
+        ma.add("จ");
+        ma.add("ด");
+        ma.add("ต");
+        ma.add("บ");
+        ma.add("ป");
+
+        Set<String> lao=new HashSet<String>(){};
+        lao.add("ง");
+        lao.add("ย");
+        lao.add("น");
+        lao.add("ร");
+        lao.add("ว");
+        lao.add("ม");
+        lao.add("ฬ");
+        lao.add("ล");
+
+        Set<String> lap=new HashSet<String>(){};
+        lap.add("ค");
+        lap.add("ช");
+        lap.add("ซ");
+        lap.add("ท");
+        lap.add("พ");
+        lap.add("ฟ");
+        lap.add("ฮ");
+
+        Set<String> nv=new HashSet<String>(){};
+        nv.add("อา");
+        nv.add("อิ");
+        nv.add("อี");
+        nv.add("อือ");
+        nv.add("อึ");
+        nv.add("อุ");
+        nv.add("อู");
+
+        HashMap<String,String> pair_alp=new HashMap<String,String>();
+        pair_alp.put("ค","ข");
+        pair_alp.put("ช","ฉ");
+        pair_alp.put("ซ","ส");
+        pair_alp.put("ท","ถ");
+        pair_alp.put("พ","ผ");
+        pair_alp.put("ฟ","ฝ");
+        pair_alp.put("ฮ","ห");
+
+        HashMap<String,String> map_tone=new HashMap<String,String>();
+        map_tone.put("เอก", "่");
+        map_tone.put("โท", "้");
+        map_tone.put("ตรี","๊");
+        map_tone.put("จัตวา", "๋");
+        map_tone.put("", "");
+        map_tone.put(null, "");
+        map_tone.put("NO", "");
+
+
+        HashMap<String,String> map_final=new HashMap<String,String>();
+        map_final.put("กก", "ก");
+        map_final.put("กน", "น");
+        map_final.put("กง", "ง");
+        map_final.put("กด", "ด");
+        map_final.put("กบ", "บ");
+        map_final.put("กม", "ม");
+        map_final.put("เกย", "ย");
+        map_final.put("เกอว", "ว");
+        map_final.put("", "");
+
+        String nt="";
+        String na="";
+        if(nv.contains(a)){
+            if(fkp.contains(f)){
+                nt=t;
+            }
+            else if(fkt.contains(f)){
+                if(t.equals("เอก"))nt="";
+                else nt=t;
+            }
+            else if(f.equals("")){
+                if(vl.contains(v)){
+                    nt=t;
+                }
+                else if(vs.contains(v)){
+                    if(t.equals("เอก"))nt="";
+                    else nt=t;
+                }
+                else nt="NO";
+            }
+            else nt="NO";
+            na=a;
+        }
+        else if(lao.contains(a)){
+            if(fkp.contains(f)){
+                if(t.equals("เอก")){
+                    na="ห"+a;
+                    nt=t;
+                }
+                else if(t.equals("โท")){
+                    nt="เอก";
+                    na=a;
+                }
+                else if(t.equals("ตรี")){
+                    nt="โท";
+                    na=a;
+                }
+                else if(t.equals("จัตวา")){
+                    na="ห"+a;
+                    nt="";
+                }
+                else if(t.equals("")) {
+                    na=a;
+                    nt=t;
+                }
+                else nt="NO";
+            }
+            else if(fkt.contains(f)){
+                if(vl.contains(v)){
+                    if(t.equals("")) {
+                        nt=t;
+                        na=a;
+                    }
+                    else if(t.equals("เอก")) {
+                        na="ห"+a;
+                        nt="";
+                    }
+                    else if(t.equals("โท")){
+                        na=a;
+                        nt="";
+                    }
+                    else if(t.equals("ตรี")){
+                        na=a;
+                        nt="โท";
+                    }
+                    else if(t.equals("จัตวา")){
+                        na=a;
+                        nt=t;
+                    }
+                    else nt="NO";
+                }
+                else if(vs.contains(v)){
+                    if(t.equals("")) {
+                        nt=t;
+                        na=a;
+                    }
+                    else if(t.equals("เอก")) {
+                        na="ห"+a;
+                        nt="";
+                    }
+                    else if(t.equals("โท")){
+                        na="ห"+a;
+                        nt=t;
+                    }
+                    else if(t.equals("ตรี")){
+                        na=a;
+                        nt="";
+                    }
+                    else if(t.equals("จัตวา")){
+                        na=a;
+                        nt=t;
+                    }
+                    else nt="NO";
+                }
+                else nt="NO";
+            }
+            else if(f.equals("")){
+                if(vl.contains(v)){
+                    if(t.equals("เอก")){
+                        na="ห"+a;
+                        nt=t;
+                    }
+                    else if(t.equals("โท")){
+                        nt="เอก";
+                        na=a;
+                    }
+                    else if(t.equals("ตรี")){
+                        nt="โท";
+                        na=a;
+                    }
+                    else if(t.equals("จัตวา")){
+                        na="ห"+a;
+                        nt="";
+                    }
+                    else if(t.equals("")) {
+                        na=a;
+                        nt=t;
+                    }
+                    else nt="NO";
+                }
+                else if(vs.contains(v)){
+                    if(t.equals("")) {
+                        nt=t;
+                        na=a;
+                    }
+                    else if(t.equals("เอก")) {
+                        na="ห"+a;
+                        nt="";
+                    }
+                    else if(t.equals("โท")){
+                        na="ห"+a;
+                        nt=t;
+                    }
+                    else if(t.equals("ตรี")){
+                        na=a;
+                        nt="";
+                    }
+                    else if(t.equals("จัตวา")){
+                        na=a;
+                        nt=t;
+                    }
+                    else nt="NO";
+                }
+                else nt="NO";
+            }
+            else nt="NO";
+        }
+        else if(lap.contains(a)){
+            if(fkp.contains(f)){
+                if(t.equals("เอก")){
+                    na=pair_alp.get(a);
+                    nt=t;
+                }
+                else if(t.equals("โท")){
+                    nt="เอก";
+                    na=a;
+                }
+                else if(t.equals("ตรี")){
+                    nt="โท";
+                    na=a;
+                }
+                else if(t.equals("จัตวา")){
+                    na=pair_alp.get(a);
+                    nt="";
+                }
+                else if(t.equals("")) {
+                    na=a;
+                    nt=t;
+                }
+                else nt="NO";
+            }
+            else if(fkt.contains(f)){
+                if(vl.contains(v)){
+                    if(t.equals("")) {
+                        nt=t;
+                        na=a;
+                    }
+                    else if(t.equals("เอก")) {
+                        na=pair_alp.get(a);
+                        nt="";
+                    }
+                    else if(t.equals("โท")){
+                        na=a;
+                        nt="";
+                    }
+                    else if(t.equals("ตรี")){
+                        na=a;
+                        nt="โท";
+                    }
+                    else if(t.equals("จัตวา")){
+                        na=a;
+                        nt=t;
+                    }
+                    else nt="NO";
+                }
+                else if(vs.contains(v)){
+                    if(t.equals("")) {
+                        nt=t;
+                        na=a;
+                    }
+                    else if(t.equals("เอก")) {
+                        na=pair_alp.get(a);
+                        nt="";
+                    }
+                    else if(t.equals("โท")){
+                        na=pair_alp.get(a);
+                        nt=t;
+                    }
+                    else if(t.equals("ตรี")){
+                        na=a;
+                        nt="";
+                    }
+                    else if(t.equals("จัตวา")){
+                        na=a;
+                        nt=t;
+                    }
+                    else nt="NO";
+                }
+                else nt="NO";
+            }
+            else if(f.equals("")){
+                if(vl.contains(v)){
+                    if(t.equals("เอก")){
+                        na=pair_alp.get(a);
+                        nt=t;
+                    }
+                    else if(t.equals("โท")){
+                        nt="เอก";
+                        na=a;
+                    }
+                    else if(t.equals("ตรี")){
+                        nt="โท";
+                        na=a;
+                    }
+                    else if(t.equals("จัตวา")){
+                        na=pair_alp.get(a);
+                        nt="";
+                    }
+                    else if(t.equals("")) {
+                        na=a;
+                        nt=t;
+                    }
+                    else nt="NO";
+                }
+                else if(vs.contains(v)){
+                    if(t.equals("")) {
+                        nt=t;
+                        na=a;
+                    }
+                    else if(t.equals("เอก")) {
+                        na=pair_alp.get(a);
+                        nt="";
+                    }
+                    else if(t.equals("โท")){
+                        na=pair_alp.get(a);
+                        nt=t;
+                    }
+                    else if(t.equals("ตรี")){
+                        na=a;
+                        nt="";
+                    }
+                    else if(t.equals("จัตวา")){
+                        na=a;
+                        nt=t;
+                    }
+                    else nt="NO";
+                }
+                else nt="NO";
+            }
+            else nt="NO";
+        }
+        else {
+            nt="NO";
+        }
+        if(na.equals("")||na.equals(null)) na="อ";
+        if(v.equals("อะ")){
+            if(f.equals("")){
+                ans=na+map_tone.get(nt)+"ะ";
+            }
+            else {
+                ans=na+"ั"+map_tone.get(nt)+map_final.get(f);
+            }
+        }
+        else if(v.equals("อา")){
+            ans=na+map_tone.get(nt)+"า"+map_final.get(f);
+        }
+        else if(v.equals("อี")){
+            ans=na+"ี"+map_tone.get(nt)+map_final.get(f);
+        }
+        else if(v.equals("อิ")){
+            ans=na+"ิ"+map_tone.get(nt)+map_final.get(f);
+        }
+        else if(v.equals("อึ")){
+            ans=na+"ึ"+map_tone.get(nt)+map_final.get(f);
+        }
+        else if(v.equals("อือ")){
+            ans=na+"ื"+map_tone.get(nt)+map_final.get(f);
+        }
+        else if(v.equals("อุ")){
+            ans=na+"ุ"+map_tone.get(nt)+map_final.get(f);
+        }
+        else if(v.equals("อู")){
+            ans=na+"ู"+map_tone.get(nt)+map_final.get(f);
+        }
+        else if(v.equals("เอะ")){
+            if(f.equals("")){
+                ans="เ"+na+map_tone.get(nt)+"ะ";
+            }
+            else {
+                ans="เ"+na+"็"+map_tone.get(nt)+map_final.get(f);
+            }
+        }
+        else if(v.equals("เอ")){
+            ans="เ"+na+map_tone.get(nt)+map_final.get(f);
+        }
+        else if(v.equals("แอะ")){
+            if(f.equals("")){
+                ans="แ"+na+map_tone.get(nt)+"ะ";
+            }
+            else {
+                ans="แ"+na+"็"+map_tone.get(nt)+map_final.get(f);
+            }
+        }
+        else if(v.equals("แอ")){
+            ans="แ"+na+map_tone.get(nt)+map_final.get(f);
+        }
+        else if(v.equals("เอียะ")){
+            ans="เ"+na+"ี"+map_tone.get(nt)+"ยะ";
+        }
+        else if(v.equals("เอีย")){
+            ans="เ"+na+"ี"+map_tone.get(nt)+"ย"+map_final.get(f);
+        }
+        else if(v.equals("เอือะ")){
+            ans="เ"+na+"ื"+map_tone.get(nt)+"อะ";
+        }
+        else if(v.equals("เอือ")){
+            ans="เ"+na+"ื"+map_tone.get(nt)+"อ"+map_final.get(f);
+        }
+        else if(v.equals("อัวะ")){
+            ans=na+"ั"+map_tone.get(nt)+"วะ";
+        }
+        else if(v.equals("อัว")){
+            if(f.equals("")){
+                ans=na+"ั"+map_tone.get(nt)+"ว";
+            }
+            else {
+                ans=na+map_tone.get(nt)+"ว"+map_final.get(f);
+            }
+        }
+        else if(v.equals("โอะ")){
+            if(f.equals("")){
+                ans="โ"+na+map_tone.get(nt)+"ะ";
+            }
+            else {
+                ans=na+map_tone.get(nt)+map_final.get(f);
+            }
+        }
+        else if(v.equals("โอ")){
+            ans="โ"+na+map_tone.get(nt)+map_final.get(f);
+        }
+        else if(v.equals("เอาะ")){
+            if(f.equals("")){
+                ans="เ"+a+map_tone.get(nt)+"าะ";
+            }
+            else {
+                ans=a+"็อ"+map_final.get(f);
+            }
+        }
+        else if(v.equals("ออ")){
+            ans=a+map_tone.get(nt)+"อ"+map_final.get(f);
+        }
+        else if(v.equals("เออะ")){
+            if(f.equals("")){
+                ans="เ"+a+map_tone.get(nt)+"อะ";
+            }
+            else {
+                ans="เ"+a+"ิ"+map_tone.get(nt)+map_final.get(f);
+            }
+        }
+        else if(v.equals("เออ")){
+            ans="เ"+a+map_tone.get(nt)+"อ"+map_final.get(f);
+        }
+
+        return ans;
     }
 
     protected boolean chectDelay() {
@@ -1294,7 +1838,7 @@ public class MainActivity extends Activity {
     }
 
     public static String checkMatch(Stroke[] c, ArrayList<Stroke>[] d, String[] rw, int n) throws UnsupportedEncodingException {
-        for (int i = 0; i < 50000; i++) {
+        for (int i = 0; i < 70000; i++) {
             //System.out.println(d[i].size());
             if ((d[i].size() - 1) == n) {
                 boolean lo = true;
