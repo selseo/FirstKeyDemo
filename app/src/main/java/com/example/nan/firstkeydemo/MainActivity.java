@@ -1321,7 +1321,7 @@ public class MainActivity extends Activity {
 
         String nt="";
         String na="";
-        if(nv.contains(a)){
+        if(ma.contains(a)){
             if(fkp.contains(f)){
                 nt=t;
             }
