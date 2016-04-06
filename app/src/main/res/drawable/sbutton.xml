@@ -4,25 +4,25 @@
         android:state_pressed="false"
         android:state_focused="false"
         android:state_enabled="true"
-        android:drawable="@drawable/alpnor"/>
+        android:drawable="@drawable/changenor"/>
     <item
         android:state_pressed="false"
         android:state_focused="true"
         android:state_enabled="true"
-        android:drawable="@drawable/alppre"/>
+        android:drawable="@drawable/changepre"/>
     <item
         android:state_pressed="true"
         android:state_focused="false"
         android:state_enabled="true"
-        android:drawable="@drawable/alppre"/>
+        android:drawable="@drawable/changepre"/>
     <item
         android:state_pressed="false"
         android:state_focused="true"
         android:state_enabled="false"
-        android:drawable="@drawable/alpnor"/>
+        android:drawable="@drawable/changenor"/>
     <item
         android:state_pressed="false"
         android:state_focused="false"
         android:state_enabled="false"
-        android:drawable="@drawable/alpnor"/>
+        android:drawable="@drawable/changenor"/>
 </selector>

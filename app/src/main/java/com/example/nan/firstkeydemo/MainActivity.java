@@ -133,6 +133,8 @@ public class MainActivity extends Activity {
     String show = "";
     int ii = 0;
     String t="";
+    String st="";
+    int ct=0;
 
 
     @Override
@@ -154,7 +156,7 @@ public class MainActivity extends Activity {
             FileInputStream fis = new FileInputStream(file);
             InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
             BufferedReader br = new BufferedReader(isr);
-            for (int i = 0; i < 70000; i++) {
+            for (int i = 0; i < 67800; i++) {
                 String line = br.readLine();
                 line = line.trim();
                 //Log.v("OUTPUT_H",line);
@@ -231,6 +233,7 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
@@ -239,7 +242,7 @@ public class MainActivity extends Activity {
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
 
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel1 = (Button) findViewById(R.id.vowel1);
@@ -255,13 +258,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel2 = (Button) findViewById(R.id.vowel2);
@@ -277,13 +281,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel3 = (Button) findViewById(R.id.vowel3);
@@ -299,13 +304,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel4 = (Button) findViewById(R.id.vowel4);
@@ -321,13 +327,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel5 = (Button) findViewById(R.id.vowel5);
@@ -343,13 +350,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel6 = (Button) findViewById(R.id.vowel6);
@@ -365,13 +373,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel7 = (Button) findViewById(R.id.vowel7);
@@ -387,13 +396,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel8 = (Button) findViewById(R.id.vowel8);
@@ -409,13 +419,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel9 = (Button) findViewById(R.id.vowel9);
@@ -431,13 +442,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel10 = (Button) findViewById(R.id.vowel10);
@@ -453,13 +465,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button vowel11 = (Button) findViewById(R.id.vowel11);
@@ -475,13 +488,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewVowel(d, k);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
 
@@ -497,13 +511,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     changeBefore();
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button shortRight = (Button) findViewById(R.id.shortright);
@@ -517,13 +532,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     changeBefore();
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
 
@@ -540,13 +556,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp1 = (Button) findViewById(R.id.alp1);
@@ -561,13 +578,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp2 = (Button) findViewById(R.id.alp2);
@@ -582,13 +600,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp3 = (Button) findViewById(R.id.alp3);
@@ -603,13 +622,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp4 = (Button) findViewById(R.id.alp4);
@@ -624,13 +644,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp5 = (Button) findViewById(R.id.alp5);
@@ -645,13 +666,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp6 = (Button) findViewById(R.id.alp6);
@@ -666,13 +688,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp7 = (Button) findViewById(R.id.alp7);
@@ -687,13 +710,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
 
@@ -709,13 +733,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp9 = (Button) findViewById(R.id.alp9);
@@ -730,13 +755,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp10 = (Button) findViewById(R.id.alp10);
@@ -751,13 +777,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp11 = (Button) findViewById(R.id.alp11);
@@ -772,13 +799,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp12 = (Button) findViewById(R.id.alp12);
@@ -793,13 +821,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp13 = (Button) findViewById(R.id.alp13);
@@ -814,13 +843,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp14 = (Button) findViewById(R.id.alp14);
@@ -835,13 +865,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp15 = (Button) findViewById(R.id.alp15);
@@ -856,13 +887,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp16 = (Button) findViewById(R.id.alp16);
@@ -877,13 +909,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp17 = (Button) findViewById(R.id.alp17);
@@ -898,13 +931,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp18 = (Button) findViewById(R.id.alp18);
@@ -919,13 +953,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button alp19 = (Button) findViewById(R.id.alp19);
@@ -940,13 +975,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewAlp(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
 
@@ -963,13 +999,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewTone(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button tone1 = (Button) findViewById(R.id.tone1);
@@ -984,13 +1021,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewTone(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button tone2 = (Button) findViewById(R.id.tone2);
@@ -1005,13 +1043,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewTone(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button tone3 = (Button) findViewById(R.id.tone3);
@@ -1026,13 +1065,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewTone(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
 
@@ -1049,13 +1089,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewFinal(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button final1 = (Button) findViewById(R.id.final1);
@@ -1070,13 +1111,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewFinal(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button final2 = (Button) findViewById(R.id.final2);
@@ -1091,13 +1133,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewFinal(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button final3 = (Button) findViewById(R.id.final3);
@@ -1112,13 +1155,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewFinal(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button final4 = (Button) findViewById(R.id.final4);
@@ -1133,13 +1177,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewFinal(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button final5 = (Button) findViewById(R.id.final5);
@@ -1154,13 +1199,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewFinal(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button final6 = (Button) findViewById(R.id.final6);
@@ -1175,13 +1221,14 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewFinal(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
         Button final7 = (Button) findViewById(R.id.final7);
@@ -1196,17 +1243,29 @@ public class MainActivity extends Activity {
                     try {
                         t=realWord(data);
                         if(t.equals("NO")) t=kamArn(data.getAlp(),data.getVowel(),data.getFin(),data.getTone());
+                        showtext(t);
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
                     addNewFinal(d);
                 }
                 //String t = "" + data.getAlp() + " " + data.getVowel() + " " + data.getFin() + " " + data.getTone();
-                showText.setText(t);
+                showText.setText(st);
             }
         });
 
 
+    }
+    
+    protected void showtext(String tt){
+        if (ct>7){
+            st=tt;
+            ct=0;
+        }
+        else{
+            st=st+tt;
+        }
+        ct++;
     }
 
     protected String kamArn(String a,String v,String f,String t){
@@ -1838,7 +1897,7 @@ public class MainActivity extends Activity {
     }
 
     public static String checkMatch(Stroke[] c, ArrayList<Stroke>[] d, String[] rw, int n) throws UnsupportedEncodingException {
-        for (int i = 0; i < 70000; i++) {
+        for (int i = 0; i < 67800; i++) {
             //System.out.println(d[i].size());
             if ((d[i].size() - 1) == n) {
                 boolean lo = true;
